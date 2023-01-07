@@ -97,3 +97,9 @@
 - path -> 리소스 경로,계층적 구조 ex)/home/file1.jpg, /members/100, /items/iphone12
 - query -> key=value의 형태이며 ?로 시작, &로 추가 가능하다. query parameter, query string 등으로 불림, 웹서버에 제공하는 파라미터,문자형태 ex) ?keyA=value&keyB=valueB
 - fragment -> html 내부 북마크 등에 사용, 서버에 전송하는 정보가 아니다.
+
+### 웹 브라우저의 요청 흐름
+- 웹 브라우저(IP : 100.100.100.1), 구글 서버(IP : 200.200.200.2)
+- https://www.google.com/search?q=hello&hl=ko 요청을 보냈을 때
+- GET/search?q=hello&hl=ko HTTP/1.1 Host: www.google.com 이런 양식으로 요청 메시지를 보낸다.
+- 웹 브라우저가 HTTP 메시지를 생성한 후 SOCKET 라이브러리를 통해 전달하여 TCP/IP 패킷과 HTTP 메시지를 포함하여 보낸다.
