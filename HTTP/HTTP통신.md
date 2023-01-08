@@ -103,3 +103,11 @@
 - https://www.google.com/search?q=hello&hl=ko 요청을 보냈을 때
 - GET/search?q=hello&hl=ko HTTP/1.1 Host: www.google.com 이런 양식으로 요청 메시지를 보낸다.
 - 웹 브라우저가 HTTP 메시지를 생성한 후 SOCKET 라이브러리를 통해 전달하여 TCP/IP 패킷과 HTTP 메시지를 포함하여 보낸다.
+- 그 후엔 구글에서도 응답 패킷을 전달하면 웹 브라우저에 HTML 렌더링이 된다.
+
+## HTTP(Hyper Text Transfer Protocol)
+- 모든 것이 HTTP
+- 클라이언트 서버 구조
+- Stateful, Stateless
+- 비 연결성(connectionless)
+- HTTP 메시지
