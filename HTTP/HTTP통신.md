@@ -111,3 +111,24 @@
 - Stateful, Stateless
 - 비 연결성(connectionless)
 - HTTP 메시지
+
+### 모든 것이 HTTP
+- HTML, TEXT, IMAGE, 음성, 영상, 파일, JSON, XML(API)
+- 거의 모든 형태의 데이터 전송이 가능하다.
+- 서버간에 데이터를 주고 받을 때도 대부분 HTTP를 사용한다
+- 지금은 HTTP 시대 !
+- HTTP/1.1 (1997): 가장 많이 사용, 우리에게 가장 중요한 버전 (RFC2068 -> RFC2616 -> RFC7230~7235
+- HTTP/2 (2015) : 성능개선
+- HTTP/3 진행중 : TCP 대신 UDP 사용, 성능 개선
+- TCP:HTTP/1.1, HTTP/2 -> UDP:HTTP/3
+
+### HTTP 특징
+- 클라이언트 서버 구조: Request Response구조, 클라이언트는 서버에 요청을 보내고, 응답을 대기, 서버가 요청에 대한 결과를 만들어서 응답
+- 무상태 프로토콜(Stateless), 비연결성
+- HTTP 메시지
+- 단순함, 확장 가능
+
+### 무상태 프로토콜(Stateless)
+- 서버가 클라이언트의 상태를 보존X
+- 장점: 서버 확장성 높음( Scale-out )
+- 단점 : 클라이언트가 추가 데이터 전송
