@@ -155,3 +155,13 @@
 - HTTP/2, HTTP/3에서 더 많은 최적화
 
 ## HTTP 메시지
+![HttpStructure](https://user-images.githubusercontent.com/87809321/212208789-c54553fd-0861-4638-b518-f7d9002f93b8.png)
+
+### 시작 라인(요청 메시지)
+- start-line => request-line/status-line
+- request-line => method SP(공백) request-target SP HTTP-version CRLF(엔터)
+- HTTP 메서드 (GET:조회) => 종류 : GET,POST,PUT,DELETE ...
+- 요청 대상(/search?q=hello&hl=ko)
+- HTTP version
+- absolute-path[?query](절대경로[?쿼리])
+- 절대경로 = "/"로 시작하는 경로
