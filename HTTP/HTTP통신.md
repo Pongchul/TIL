@@ -164,4 +164,4 @@
 - 요청 대상(/search?q=hello&hl=ko)
 - HTTP version
 - absolute-path[?query](절대경로[?쿼리])
-- 절대경로 = "/"로 시작하는 경로
+- 절대경로 =>  "/"로 시작하는 경로
