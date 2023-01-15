@@ -46,7 +46,7 @@
 - TCP (출발지 PORT, 목적지 PORT, 전송 제어, 순서, 검증 정보 등등..)
 
 ### TCP 특징
-- 연결지향 -> TCP 3 way handshake(가상 연결)
+- 연결지향 -> TCP 3 way handshake(가상 연결), SYN+ACK
 - 데이터 전달 보증
 - 순서 보장
 - 신뢰할 수 있는 프로토콜
@@ -164,6 +164,6 @@
 - 요청 대상(/search?q=hello&hl=ko)
 - HTTP version
 - absolute-path[?query](절대경로[?쿼리])
-- 절대경로 ->  "/"로 시작하는 경로
+- 절대경로 =>  "/"로 시작하는 경로
 
 ###
