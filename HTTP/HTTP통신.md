@@ -166,4 +166,28 @@
 - absolute-path[?query](절대경로[?쿼리])
 - 절대경로 =>  "/"로 시작하는 경로
 
-###
+### 시작 라인(응답 메시지)
+- start-line = request-line / status-line
+- status-line = HTTP-version SP status-code SP reason-phrase CRLF
+- HTTP version
+- HTTP status code : success request or failed request 
+- 200 : success, 400: error of client request, 500 server internal error
+- a statement of reason : a short human-understandable status code description
+
+### HTTP Header
+- header-field = field-name ":" OWS field-value OWS (OWS : allow spacing)
+- field-name has no case syntax.
+- Any additional information required for HTTP transfer
+- ex) Content of the message body, size of the message body, compression, authentication, requesting client (browser) information
+- There are too many standard headers.
+- Can add any header if necessary.
+
+### HTTP Message Body
+- Data to be actually transferred
+- HTML file, image, video, JSON etc.. All data can be transferred as bytes.
+
+## HTTP Method
+- Let's design HTTP API.
+- HTTP method - GET,POST
+- HTTP method - PUT,PATCH,DELETE
+- HTTP method Property
