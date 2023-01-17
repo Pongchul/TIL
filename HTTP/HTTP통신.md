@@ -191,3 +191,28 @@
 - HTTP method - GET,POST
 - HTTP method - PUT,PATCH,DELETE
 - HTTP method Property
+
+### API URI setting 
+- What is resourece?
+- How to identify the resource?
+
+### Separating resources from actions
+- URI only identifies resources!
+- Identyfiy a resource from its behavior toward it
+- resource -> Noun, motion -> verb
+
+### HTTP Method (main)
+- GET : Inquiry Resource
+- POST: Processing Request Data
+- PUT: Replace a resource, create if it does not exist
+- PATCH: Change the portion of a resource
+- DELETE: Delete Resource
+
+### HTTP Method 
+- Same as GET, but except for the message portion, only return the status line and header
+- OPTIONS : Describe the communicable options (methods) for the target resource (primarily used by CORS)
+- CONNECT : Establish a tunnel to the server identified as the destination resource
+- TRACE : Performs a message loopback test along the path to the target resource
+
+### HTTP Method (GET)
+- Resource Inquiry
