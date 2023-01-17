@@ -216,3 +216,34 @@
 
 ### HTTP Method (GET)
 - Resource Inquiry
+- Data that you want to pass to the server is passed through query.
+- You can use the message body to deliver data, but it is not recommended because there are many places that do not support it.
+- 1. Message Forwarding -> 2. Server Arrival -> 3. Response data
+
+### HTTP Method (POST)
+- Processing Request Data
+- Forward request data to the server via the message
+- Server processes request data -> It performs all functions of processing data that comes through the message body.
+- Registration of new resources with mainly delivered data, used for processing.
+- 1. Message Forwarding -> 2. Create a new resource -> 3. Response Data 
+- The POST method requests that the target resource processes the representation contained in the request according to the resource's unique semantics.
+- When this resource URI receives a POST request, each resource must determine how to handle the request data.
+- Create new Resource(Registion), Processing Request Data, If it's ambiguous to treat POST Method with another method.
+
+### HTTP Method(PUT)
+- Replacing the Resource
+- Replace if there is a resource and create if there is no resource. Just Covering
+- Client identifies resources
+- Client knows resource location and specifies URI.
+
+### HTTP Method(PATCH)
+- Change the portion of a resource
+- {"age":50} PATCH 요청했을 경우 {"username": "young","age": 20} 데이터가 {"username": "young","age": 50} 으로 부분 변경
+
+### HTTP Method(DELETE)
+- Deleting Resource
+
+### Properties of the HTTP method
+- Safe Methods(안전)
+- Ideompotent Methods(멱등)
+- Cacheable Methods(캐시 가능)
