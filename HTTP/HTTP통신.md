@@ -248,3 +248,8 @@
 - Ideompotent Methods(멱등)
 - Cacheable Methods(캐시 가능)
 - ![image](https://user-images.githubusercontent.com/87809321/213038428-5761d22a-1b1d-4b81-90d3-8ecacac48f7e.png)
+
+### Safe Methods(안전)
+- Call does not change the resource.
+- Q : But what if I keep paging, logs or something like that, and it fails?
+- A : Safety considers only those resources. I don't take that into consideration.
