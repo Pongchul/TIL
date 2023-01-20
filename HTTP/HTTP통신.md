@@ -253,3 +253,26 @@
 - Call does not change the resource.
 - Q : But what if I keep paging, logs or something like that, and it fails?
 - A : Safety considers only those resources. I don't take that into consideration.
+
+### Idempotent(멱등)
+- f(f(x)) = f(x)
+- The result is the same whether it is called once, twice, or 100 times.
+- Idempotent Method -> (POST : It's not a Idempotent! If called twice, the same payment may occur in duplicate.)
+- GET, PUT, DELETE -> Even if you make the same request many times, the result is the same.
+- Automatic recovery mechanism, When the server fails to respond normally due to timeout, etc., can the client make the same request again? the basis of judgment
+- Idempotent does not consider changing resources in the middle due to external factors.
+
+### Cacheable(캐시가능)
+- Can I cache and use response result resources?
+- GET, POST, HEAD, PATCH Cacheable
+- In reality, only GET and HEAD are used as caches.
+
+### HTTP Method Activity
+- Transfer data from client to server.
+- Example to HTTP API Design.
+
+### Transfer data from client to server
+- Data transfer through Query Parameter
+- -> GET, Mainly sort filters (search terms)
+- Data transfer through message body
+- -> PUT,DELETE,POST EX) Membership, product order, resource registration, resource change
