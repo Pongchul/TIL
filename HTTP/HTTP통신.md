@@ -276,3 +276,9 @@
 - -> GET, Mainly sort filters (search terms)
 - Data transfer through message body
 - -> PUT,DELETE,POST EX) Membership, product order, resource registration, resource change
+
+### Transfer data from client to server (Four different situations)
+- static data -> images, static text documents
+- dynamic data -> search, sort filter in bulletin list (search word)
+- Data transfer via HTML Form -> Membership, product order, data change
+- Data transfer via HTTP API ->Membership, product order, data change, Server to Server, App Client, Web Client (Ajax)
