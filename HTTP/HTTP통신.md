@@ -282,3 +282,6 @@
 - dynamic data -> search, sort filter in bulletin list (search word)
 - Data transfer via HTML Form -> Membership, product order, data change
 - Data transfer via HTTP API ->Membership, product order, data change, Server to Server, App Client, Web Client (Ajax)
+
+### Static Data inquiry
+- 
