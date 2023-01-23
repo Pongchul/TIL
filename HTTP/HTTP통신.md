@@ -284,4 +284,7 @@
 - Data transfer via HTTP API ->Membership, product order, data change, Server to Server, App Client, Web Client (Ajax)
 
 ### Static Data inquiry
-- 
+- Query parameters not used
+- Static data can typically be viewed simply as a resource path without query parameters
+- For inquiries, use GET
+- images, static text documents
