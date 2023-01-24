@@ -288,3 +288,18 @@
 - Static data can typically be viewed simply as a resource path without query parameters
 - For inquiries, use GET
 - images, static text documents
+
+### Dynamic Data Inquiry
+- Mainly search, sort filter in bulletin list (search word)
+- Filters that reduce query conditions; used primarily for sorting conditions that sort query results
+- GET uses query parameters to deliver data ( For inquiries, use GET )
+
+### HTML Form data transfer
+- When HTML Form submit tranfer from POST.
+- Content-Type: Using application/x-www-form-urlencoded
+- -> end the contents of the oorm through the message body (key=value, query parameter format)
+- -> Processing urlencoding transmission data
+- HTML Form can also be sent to GET
+- Content-Type: multipart/form-data
+- -> Used when transferring binary data, such as file uploads
+- -> Can be transferred with the contents of different types of files and forms (so the name is multipart)
