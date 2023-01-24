@@ -303,3 +303,26 @@
 - Content-Type: multipart/form-data
 - -> Used when transferring binary data, such as file uploads
 - -> Can be transferred with the contents of different types of files and forms (so the name is multipart)
+
+### HTML API Data Trasfer
+- Server to server
+- -> Back-end system communication
+- Application Client
+- ->Iphone, Android
+- Web Client
+- -> Use for communication via JavaScript instead of transferring Form from HTML (AJAX)
+- -> ex) API communication with web clients such as React and VueJs
+- POST, PUT, PATCH: Send data via message body
+- GET : query, forwarding data to query parameters
+- Content-Type: Mainly using application/json (virtually standard)
+
+### HTTP API Design Examples
+- 1) HTTP API - Collection
+- -> POST-based registration
+- ex) providing member management API
+- 2) HTTP API - Store
+- -> PUT-based registration
+- ex) Static content management, remote file management
+- 3) Using HTTP Form
+- -> Manage Web Page Membership
+- -> Supply only GET, POST
