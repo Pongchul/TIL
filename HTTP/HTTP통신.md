@@ -326,3 +326,22 @@
 - 3) Using HTTP Form
 - -> Manage Web Page Membership
 - -> Supply only GET, POST
+
+### API Design(POST Base registration) -> Member Management System
+- Member List -> /members -> GET
+- Member register -> /members -> POST
+- Member inquiry -> /members/{id} -> GET
+- Member revise -> /members/{id} -> PATCH,PUT,POST
+- Member delete -> /members/{id} -> DELETE
+
+### POST - New Resource Registration Features
+- The client does not know the URI of the resource to be registered.
+- -> Member register /members -> POST
+- -> POST /members
+- The server generates a newly registered resource URI.
+- -> HTTP/1.1 201 Created
+- -> Location: /members/100
+- Collection
+- -> Resource directories managed by the server
+- -> Server creates and manages URI for resources.
+- ->The collection here is -> /members
