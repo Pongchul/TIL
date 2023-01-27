@@ -345,3 +345,10 @@
 - -> Resource directories managed by the server
 - -> Server creates and manages URI for resources.
 - ->The collection here is -> /members
+
+### Registering base on PUT -> API Design
+- File List -> /files (GET)
+- File Inquiry -> /files/{filename} (GET)
+- File Registering -> /files/{filename} (PUT)
+- File Delete -> /files/{filename} (DELETE)
+- File Bulk Registration /files (POST)
