@@ -352,3 +352,29 @@
 - File Registering -> /files/{filename} (PUT)
 - File Delete -> /files/{filename} (DELETE)
 - File Bulk Registration /files (POST)
+
+### New Resource Registering Feature
+- Client must know resource URI.
+- -> File Registering /files/{filename} (PUT)
+- -> PUT /files/star.jpg
+- The client directly specifies the URI of the resource.
+- Store
+- -> Resource store managed by the client.
+- -> Clients know and manage URI of resources.
+
+### Use HTML Form
+- HTML Form support only GET,POST.
+- Can be solved using technologies such as AJAX -> Member API reference
+- It's about pure HTML, HTML FORM.
+- GET, limited by supporting POST only.
+
+### Using HTML FORM
+- member list -> /members (GET)
+- member registering form -> /members/new (GET)
+- member registering -> /members/new, /members (POST)
+- member inquiry -> /members/{id} (GET)
+- member revising form -> /members/{id}/edit (GET)
+- member revising -> /members/{id}/edit, /members/{id} (POST)
+- member delete -> /members/{id}/delete (POST)
+
+
