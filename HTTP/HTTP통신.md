@@ -377,4 +377,28 @@
 - member revising -> /members/{id}/edit, /members/{id} (POST)
 - member delete -> /members/{id}/delete (POST)
 
+### Using HTML FORM
+- HTML FORM supports GET, POST only
+- Control URL
+- -> Use verb resource paths to address constraints
+- -> The /new, /edit, /delete control URI of POST
+- Use when it is ambiguous to resolve with HTTP method. (with HTTP API)
 
+### Good URI Design Concepts
+- Document(문서)
+- -> Single concept (one file, object instance, database row)
+- -> ex) /members/100, /files/star.jpg
+- Collection(컬렉션)
+- -> Resource directories managed by the server
+- -> Server creates and manages URI for resources.
+- -> ex) /members
+- Store(스토어)
+- -> Resource stores managed by clients.
+- -> Clients know and manage URI of resources.
+- -> ex) /files
+- Controller, Control URL
+- -> Execute additional processes that are difficult to resolve with documents, collections, and stores.
+- -> Use verb directly
+- -> ex) /members/{id}/delete
+
+## HTTP Status Code
