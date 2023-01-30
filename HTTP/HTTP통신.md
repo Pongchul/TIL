@@ -402,3 +402,12 @@
 - -> ex) /members/{id}/delete
 
 ## HTTP Status Code
+- HTTP Status Code(HTTP 상태 코드)
+
+### Status Code
+- 1xx (informational) : Request received and processing.
+- 2xx (Successful): Request normal processing
+- 3xx (Redirection): Additional action is required to complete the request.
+- 4xx (Client Error): The server is unable to fulfill the request due to client errors, incorrect grammar, etc.
+- 5xx (Server Error): Server error, server failed to process normal request
+
