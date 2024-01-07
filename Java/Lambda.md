@@ -17,3 +17,29 @@ Runnable runnable = () -> {...} // 람다식
 ```
 매개변수는 ()로 들어오고 코드 블록은 {}이다. 람다식은 인터페이스의 메서드를 구현한 익명 구현 객체가 된다.  
 <br>
+
+## 2. 람다식 기본 문법
+---
+```java
+(타입 매개변수,..) -> {실행문;...}
+(int a) -> { System.out.println(a); }
+
+매개 타입은 런타임시 대입값에 따라 타입 자동 인식 -> 생략 가능
+(a) -> { System.out.println(a); }
+
+매개변수가 하나일 경우 () 생략 가능
+a -> { System.out.println(a); }
+
+실행문이 하나일 경우 중괄호 생략 가능
+a -> System.out.println(a); 
+
+매개변수가 없다면 괄호 생략 불가능
+() -> System.out.println(a);
+
+리턴값이 있는 경우 return 문 사용
+(x,y) -> { return x+y; }
+
+중괄호에 return 문만 있다면 리턴 생략 가능
+(x,y) -> return x+y; 
+```
+<br>
