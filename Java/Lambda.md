@@ -43,6 +43,7 @@ a -> System.out.println(a);
 (x,y) -> return x+y; 
 ```
 <br>
+
 ## 3. 타겟 타입과 함수적 인터페이스
 ---
 ### 타겟 타입
@@ -76,5 +77,37 @@ fi.method(5);
 리턴값이 있는 람다식
 Myfun fi = (x) -> {... return 값;}
 int result = fi.method(5);
+```
+<br>
+
+## 4. 클래스 멤버와 로컬 변수 사용
+---
++ 클래스 멤버 사용
+    - 람다식 실행 블록에는 클래스의 멤버인 필드와 메서드를 제약없이 사용할 수 있다.
+    - 람다식 실행 블록 내에서 this는 람다식을 실행한 객체의 참조이다.
++ 로컬 변수 사용
+    - 람다식은 함수적 인터페이스의 익명 구현 객체를 생성한다
+    - 람다식에서 사용하는 외부 로컬 변수는 final 특성을 갖는다.
+
+```java
+public class Ex{
+    public int out = 10; // 람다식 내부 사용으로 final 특성을 가짐
+
+    class Inner {
+        int inner =20; // 람다식 내부 사용으로 final 특성을 가짐
+
+        void method(){
+            Myfun fi = ()->{
+                System.out.println(out); // 10
+                System.out.println(Ex.this.out); // 10
+                // Ex.this는 Ex를 가리킴
+
+                System.out.println(inner); // 20
+                System.out.println(this.inner); // 20
+                // this는 Inner을 가리킴
+            }
+        }
+    }
+}
 ```
 <br>
