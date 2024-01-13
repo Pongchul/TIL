@@ -129,3 +129,23 @@ IntBinaryOperator operator = Math::max
     - 타겟 타입에서 추상 메서드의 매개변수 및 리턴 타입에 따라 메서드 참조도 달라짐
 
 <br>
+
+### 정적 메서드와 인스턴스 메서드 참조
+```java
+public class Calcu{
+    public static int staticMethod(int x, int y){
+        return x+y;
+    }
+    public int instanceMethod(int x, int y){
+        return x+y;
+    }
+}
+
+// 정적 메서드
+IntBinaryOperator operator;
+operator = Calcu::staticMethod;
+
+// 인스턴스 메서드
+Calcu a = new Calcu();
+operator = a::instanceMethod;
+```
