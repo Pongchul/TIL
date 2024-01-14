@@ -149,3 +149,25 @@ operator = Calcu::staticMethod;
 Calcu a = new Calcu();
 operator = a::instanceMethod;
 ```
+
++ 정적 메서드 참조
+    - 클래스 :: 메서드
+    - 정적 메서드는 인스턴스 생성이 필요 없기 때문
++ 인스턴스 메서드 참조
+    - 참조변수 :: 메서드
+    - 인스턴스 메서드는 인스턴스 생성이 필요하기 때문
+
+<br>
+
+### 매개변수의 메서드 참조
+```java
+(a,b) -> {a.instanceMethod(b)}
+a클래스::instanceMethod // a클래스의 instanceMethod를 호출하여 매개값으로 b를 준다.
+```
+<br>
+
+### 생성자 참조
+```java
+(a,b) -> {return new 클래스(a,b)}
+클래스::new // 클래스의 생성자에 a,b가 매개변수로 들어간다.
+```
