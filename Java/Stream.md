@@ -2,7 +2,6 @@
 
 
 ## 스트림이란?
----
 + 데이터의 흐름을 만들어 주는 것입니다.
 + 컬렉션 형태로 구성된 데이터를 람다를 이용해 간결하고 직관적으로 프로세스 할 수 있게 합니다.
 + For, while 등을 이용하던 기존 loop를 대체합니다.
@@ -46,7 +45,7 @@ Stream<T> filter(Predicate<? super T> predicate);
 ```
 Stream의 Filter API는 Predicate에서 true를 반환하는 데이터만 존재하는 Stream을 리턴하는 기능을 제공합니다.  
 
-#### 예시
+### 예시
 ```java
 public class FilterTest {
 	public static void main(String[] args) {
@@ -180,7 +179,7 @@ Stream<T> sorted(Comparator<? super T> comparator);
 데이터가 순서대로 정렬된 Stream을 리턴하는 기능을 제공합니다.  
 데이터의 종류가 기본적으로 서로 비교할 수 없다면 어떤 식으로 비교할지를 알려주는 comparator을 인자로 제공해야 합니다.  
 
-#### 예시
+### 예시
 ```java
 public class StreamSortedTest {
 
