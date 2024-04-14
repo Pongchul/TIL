@@ -851,7 +851,7 @@ public static <T, D, A>
 + GroupingBy와 유사하지만 Function 대신 Predicate을 받아 true와 false 두 key가 존재하는 map을 반환하는 collector 입니다.
 + downstream collector을 넘겨 List 이외의 다른 형태로 map의 value를 만들 수 있습니다.
 
-#### 예시
+### 예시
 ```java
 public class StreamPartitioningByTest {
 	public static void main(String[] args) {
@@ -895,7 +895,7 @@ void forEach(Consumer<? super T> action);
 + Java의 iterable 인터페이스에도 forEach가 있기 때문에 Stream의 중간 처리가 필요없다면 굳이 Stream을 만들어 사용할 필요는 없습니다.
 
 
-#### 예시
+### 예시
 ```java
 public class StreamForEachTest {
 
@@ -944,7 +944,7 @@ Stream<Integer> parallelStream2 = numbers.stream().parallel(); // 스트림 만�
 	- 공통으로 사용하는 리소스가 있을 경우 잘못된 결과가 나오거나 아예 오류가 날 수 있습니다.(deadlock)
 	- 이를 막기 위해 mutex, semaphore 등 병렬 처리 기술을 이용하면 순차 처리보다 느려질 수 있습니다.
 
-#### 예시
+### 예시
 ```java
 public class StreamParallelTest {
 
